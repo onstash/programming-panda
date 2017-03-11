@@ -19,7 +19,7 @@
   "main": "./core/index",
   "scripts": {
     "preinstall": "node core/server/utils/npm/preinstall.js",
-    "start": "node index",
+    "start": "webpack -p --config content/themes/casper/webpack.config.js && node index",
     "test": "grunt validate --verbose"
   },
   "engines": {
